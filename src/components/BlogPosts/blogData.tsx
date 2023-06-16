@@ -48,7 +48,7 @@ async function checkRemote() {
 	const readRemotePost = await remotePost.json()
 	const sortPost = readRemotePost.data.map((sorted: string) => (sorted))
 	for(const sort in sortPost) sortPost.push(sort)
-	return `${sortPost} remote origin:`
+	return `remote origin: ${sortPost.sort}`
     }
     else {
         return notRemoteOrigin;
