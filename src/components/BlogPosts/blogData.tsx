@@ -19,6 +19,7 @@ export const blogData = {
     date: outputDate,
     postID: [generateNewID],
     subject: post.postData.subject,
+    video: post.postData.youtubeURL,
     remote: false,
     author: "Jorgen-kodehode",
 }

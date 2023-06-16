@@ -24,7 +24,11 @@ export default function BlogPosts() {
                 {output.postID}
             </li>
             <li>
-                {output.remote}
+                {!output.remote}
+            </li>
+            <li>
+                <a href={output.video} referrerPolicy="no-referrer"/>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Yi6NxMxCFY8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
             </li>
             <li> 
                 <h4> Date: 

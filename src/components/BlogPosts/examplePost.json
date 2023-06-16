@@ -3,7 +3,8 @@
         "title" :"Example blog post!",
         "author": "Jorgen-Kodehode",
         "subject":"Example",
-        "content": "This is an example blog post, it's pretty long and read as a single string. However, it could also be split into an array. That would be cool.",
+        "content": "Tsoding wrote a C-compiler in PHP! Watch this crazy video",
+        "youtubeURL": "https://youtu.be/Yi6NxMxCFY8",
         "isRemote": false
     }
 }
