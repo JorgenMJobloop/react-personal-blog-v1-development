@@ -44,7 +44,7 @@ async function checkRemote() {
     const notRemoteOrigin = "not a remote origin post, default back to default author"
 	
     if(!blogData.remote) {
-        const remotePost = await fetch("https://example.com/")
+    const remotePost = await fetch("https://example.com/")
 	const readRemotePost = await remotePost.json()
 	const sortPost = readRemotePost.data.map((sorted: string) => (sorted))
 	for(const sort in sortPost) sortPost.push(sort)
