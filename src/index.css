@@ -1,5 +1,6 @@
 * {
-  margin: 0;
+  padding: auto;
+  margin: auto;
   box-sizing: border-box;
 }
 
@@ -21,7 +22,6 @@
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  gap: 20px;
 }
 
 .headerComponent {
@@ -29,15 +29,12 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100vw;
-  min-height: 7vh;
+  min-height: 8vh;
   background-image: url("../banner.svg");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 2 #213547;
   font-size: large;
-  position: sticky;
-  padding: 0;
-  margin: 0;
 }
 
 .blogCard {
@@ -47,9 +44,11 @@
   background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220523/pngtree-neon-lined-pattern-on-a-dark-blog-banner-vector-image_1393724.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: filter(opacity(0.96));
+  filter: opacity(0.93);
   width: 100vw;
   text-align: center;
+  height: 100vh;
+  background-attachment: scroll;
 }
 
 .blogContent {
@@ -58,16 +57,19 @@
 }
 
 .footerContainer {
-  border: 3px solid #2f348f;
+  border: none;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  bottom: 0;
   position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight:300;
   text-align: center;
-  background-color: #213547;
+  background-color: #212529;
 }
 
 a {
