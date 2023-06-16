@@ -1,0 +1,9 @@
+{
+    "postData": {
+        "title" :"Example blog post!",
+        "author": "Jorgen-Kodehode",
+        "subject":"Example",
+        "content": ["This is an example blogpost, it will look similar to this", "and contain various content & subjects"],
+        "isRemote": false
+    }
+}
