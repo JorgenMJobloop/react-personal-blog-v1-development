@@ -3,7 +3,7 @@
         "title" :"Example blog post!",
         "author": "Jorgen-Kodehode",
         "subject":"Example",
-        "content": ["This is an example blogpost, it will look similar to this", " and contain various content & subjects"],
+        "content": "This is an example blog post, it's pretty long and read as a single string. However, it could also be split into an array. That would be cool.",
         "isRemote": false
     }
 }
