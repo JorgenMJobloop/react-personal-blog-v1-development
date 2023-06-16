@@ -39,7 +39,7 @@ async function getBlogPostRemote() {
     for(const post in getPost) getPost.push(post)
     return getPost; 
 }
-
+getBlogPostRemote()
 // async function that checks whether the blogpost is from a remote author or not.
 async function checkRemote() {
     const notRemoteOrigin = "not a remote origin post, default back to default author"
@@ -55,4 +55,4 @@ async function checkRemote() {
         return notRemoteOrigin;
     }
 }
-//checkRemote()
+checkRemote()
