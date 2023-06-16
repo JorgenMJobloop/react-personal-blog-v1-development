@@ -21,6 +21,9 @@ export default function BlogPosts() {
             {output.post}   
             </li>
             <li>
+                {output.postID}
+            </li>
+            <li>
                 {output.remote}
             </li>
             <li> 
