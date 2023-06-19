@@ -41,7 +41,7 @@ async function getBlogPostRemote() {
 }
 getBlogPostRemote()
 // async function that checks whether the blogpost is from a remote author or not.
-async function checkRemote() {
+function checkRemote() {
     const notRemoteOrigin = "not a remote origin post, default back to default author"
 	
     if(!blogData.remote) {
