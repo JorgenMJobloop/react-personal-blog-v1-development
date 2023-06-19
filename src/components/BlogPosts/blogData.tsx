@@ -45,7 +45,7 @@ function checkRemote() {
     const notRemoteOrigin = "not a remote origin post, default back to default author"
 	
     if(!blogData.remote) {
-        getBlogPostRemote;
+        return getBlogPostRemote();
     }
     else {
         return notRemoteOrigin;
