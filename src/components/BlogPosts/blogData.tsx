@@ -33,22 +33,23 @@ export const blogData = {
 
 // async function that gathers the blogpost from author(s) public facing domain name.
 async function getBlogPostRemote() {
-    const response = await fetch("https://example.com")
-    const readData = await response.json()
-    const getPost = readData.data.map((newPost: string) => (newPost))
-    for(const post in getPost) getPost.push(post)
-    return getPost; 
+  const response = await fetch("https://example.com");
+  const readData = await response.json();
+  const getPost = readData.data.map((newPost) => newPost);
+  return getPost;
 }
-getBlogPostRemote()
-// async function that checks whether the blogpost is from a remote author or not.
-function checkRemote() {
-    const notRemoteOrigin = "not a remote origin post, default back to default author"
-	
-    if(!blogData.remote) {
-        return getBlogPostRemote();
-    }
-    else {
-        return notRemoteOrigin;
-    }
+
+async function checkRemote() {
+  const notRemoteOrigin = "not a remote origin post, default back to default author";
+
+  if (!blogData.remote) {
+    return await getBlogPostRemote();
+  } else {
+    return notRemoteOrigin;
+  }
 }
-checkRemote()
+
+checkRemote().then((result) => {
+  console.log(result);
+});
+
